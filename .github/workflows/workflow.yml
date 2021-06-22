@@ -12,6 +12,7 @@ jobs:
           css: true
           format: json
           log_level: INFO
+          blacklist: styles.css
 
       - uses: actions/upload-artifact@v2
         with:
