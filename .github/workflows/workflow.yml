@@ -1,0 +1,20 @@
+name: HTML5 Validator
+on: [ pull_request ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2 # Required will all actions
+      - name: Checks HTML5
+        uses: Cyb3r-Jak3/html5validator-action@v0.6.1
+        with:
+          root: public
+          css: true
+          format: json
+          log_level: INFO
+          blacklist: styles.css
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: html_validator
+          path: html_validator.log
