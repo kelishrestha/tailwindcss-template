@@ -1,5 +1,5 @@
 name: HTML5 Validator
-on: [ push, pull_request ]
+on: [ pull_request ]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,3 +10,4 @@ jobs:
       with:
         # Path of the files to test
         root: public
+        css: true
