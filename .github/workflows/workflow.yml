@@ -10,17 +10,3 @@ jobs:
       with:
         # Path of the files to test
         root: public
-        # Path of config file
-        config: # optional
-        # Extra arguments to test with
-        extra: # optional
-        # Format for logging output. Valid values: gnu,xml,json,text
-        format: # optional
-        # Logging Level. Valid values: DEBUG, INFO, WARNING. Default: WARNING
-        log_level: # optional, default is WARNING
-        # Checks css as well
-        css: # optional
-        # Files or directories to ignore in checking
-        blacklist: # optional
-        # Flag that increase verbose output only used for troubleshooting the action.
-        action_debug: # optional
